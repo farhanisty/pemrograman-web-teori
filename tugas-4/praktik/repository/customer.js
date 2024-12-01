@@ -8,3 +8,16 @@ export const getAllCustomer = () => {
     });
   });
 };
+
+export const getCustomerById = (id) => {
+  return new Promise((resolve, reject) => {
+    connection.query(
+      "SELECT * FROM customers WHERE CustomerID = ?",
+      [id],
+      (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      },
+    );
+  });
+};
