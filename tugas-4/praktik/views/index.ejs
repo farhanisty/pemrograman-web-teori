@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Customer</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Customer ID</th>
+          <th>Company Name</th>
+          <th>Contact Name</th>
+          <th>ContactTitle</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% customers.forEach((customer) => { %>
+          <tr>
+            <td><%= customer.CustomerID %></td>
+            <td><%= customer.CompanyName %></td>
+            <td><%= customer.ContactName %></td>
+            <td><%= customer.ContactTitle %></td>
+            <td><%= customer.Address %></td>
+            <td><%= customer.City %></td>
+            <th><a href="/customer/<%= customer.CustomerID %>">detail</a></th>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+      
+  </body>
+</html>
