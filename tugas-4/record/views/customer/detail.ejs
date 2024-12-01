@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All Customer</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Label</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Customer ID</td>
+          <td><%= customer.CustomerID %></td>
+        </tr>
+        <tr>
+          <td>Company Name</td>
+          <td><%= customer.CompanyName %></td>
+        </tr>
+        <tr>
+          <td>Contact Name</td>
+          <td><%= customer.ContactName %></td>
+        </tr>
+        <tr>
+          <td>Contact Title</td>
+          <td><%= customer.ContactTitle %></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td><%= customer.Address %></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td><%= customer.City %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="/">back</a>
+  </body>
+</html>
